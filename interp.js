@@ -8,7 +8,7 @@ function $(id) {
 }
 
 function run() {
-    var inp = String($('input').innerHTML);
+    var inp = String($('input').innerText);
     var res = '';
     // var asterisks = [];
     var isMatchingAsterisk = false;
@@ -35,6 +35,7 @@ function run() {
         }
         else {
             res += inp[i];
+            console.log(3, inp[i])
         }
     }
 
@@ -64,7 +65,5 @@ function run() {
 
     // }
 
-    $('input').innerHTML = out;
-    $('input').focus();
-
+    $('output').innerHTML = out;
 }
