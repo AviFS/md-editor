@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="init();">
-    <textarea id="input" rows=15 cols=50 oninput='run();'></textarea>
+    <div class="textarea" id="input" contenteditable="true" oninput="run();" spellcheck="false"></div>
     <button type="button" onclick="run();">Run</button>
     <pre id="output"></pre>
 </body>
